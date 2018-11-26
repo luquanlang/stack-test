@@ -14,6 +14,7 @@
 		BF1804F421A8075A00DE8028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1804F221A8075A00DE8028 /* LaunchScreen.storyboard */; };
 		BF1804FF21A8075A00DE8028 /* TestLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1804FE21A8075A00DE8028 /* TestLabelTests.swift */; };
 		BF18050A21A8075A00DE8028 /* TestLabelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF18050921A8075A00DE8028 /* TestLabelUITests.swift */; };
+		FDC2F2CE999588F9A2173EA1 /* Pods_TestLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8998A9316897EF2BC2445071 /* Pods_TestLabel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FC29768B43E625D0DCEBAE5 /* Pods-TestLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestLabel/Pods-TestLabel.release.xcconfig"; sourceTree = "<group>"; };
+		8998A9316897EF2BC2445071 /* Pods_TestLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D698774FF2E13A431E4167D /* Pods-TestLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestLabel/Pods-TestLabel.debug.xcconfig"; sourceTree = "<group>"; };
 		BF1804E621A8075800DE8028 /* TestLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1804E921A8075800DE8028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF1804EB21A8075800DE8028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC2F2CE999588F9A2173EA1 /* Pods_TestLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E69A4998050691DEEBDAA7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D698774FF2E13A431E4167D /* Pods-TestLabel.debug.xcconfig */,
+				2FC29768B43E625D0DCEBAE5 /* Pods-TestLabel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BF1804DD21A8075800DE8028 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				BF1804FD21A8075A00DE8028 /* TestLabelTests */,
 				BF18050821A8075A00DE8028 /* TestLabelUITests */,
 				BF1804E721A8075800DE8028 /* Products */,
+				8E69A4998050691DEEBDAA7A /* Pods */,
+				CE403100E6FDD02619B54743 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = TestLabelUITests;
 			sourceTree = "<group>";
 		};
+		CE403100E6FDD02619B54743 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8998A9316897EF2BC2445071 /* Pods_TestLabel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF18050E21A8075A00DE8028 /* Build configuration list for PBXNativeTarget "TestLabel" */;
 			buildPhases = (
+				9F3BD3DD8639D0AB22CE3674 /* [CP] Check Pods Manifest.lock */,
 				BF1804E221A8075800DE8028 /* Sources */,
 				BF1804E321A8075800DE8028 /* Frameworks */,
 				BF1804E421A8075800DE8028 /* Resources */,
+				7C0257D749F0F6941821F042 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C0257D749F0F6941821F042 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestLabel/Pods-TestLabel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestLabel/Pods-TestLabel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F3BD3DD8639D0AB22CE3674 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestLabel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF1804E221A8075800DE8028 /* Sources */ = {
@@ -430,6 +503,7 @@
 		};
 		BF18050F21A8075A00DE8028 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D698774FF2E13A431E4167D /* Pods-TestLabel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +515,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.label.com.TestLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +523,7 @@
 		};
 		BF18051021A8075A00DE8028 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FC29768B43E625D0DCEBAE5 /* Pods-TestLabel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,6 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.label.com.TestLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
